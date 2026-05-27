@@ -1,56 +1,79 @@
+
+## CONCERNS.md Template (concerns focus)
+
+```markdown
 # Codebase Concerns
 
-## Core Sections (Required)
+**Analysis Date:** [YYYY-MM-DD]
 
-### 1) Top Risks (Prioritized)
+## Tech Debt
 
-| Severity | Concern | Evidence | Impact | Suggested action |
-|----------|---------|----------|--------|------------------|
-| [high/med/low] | [issue] | [file or scan output] | [impact] | [next action] |
+**[Area/Component]:**
+- Issue: [What's the shortcut/workaround]
+- Files: `[file paths]`
+- Impact: [What breaks or degrades]
+- Fix approach: [How to address it]
 
-### 2) Technical Debt
+## Known Bugs
 
-List the most important debt items only.
+**[Bug description]:**
+- Symptoms: [What happens]
+- Files: `[file paths]`
+- Trigger: [How to reproduce]
+- Workaround: [If any]
 
-| Debt item | Why it exists | Where | Risk if ignored | Suggested fix |
-|-----------|---------------|-------|-----------------|---------------|
-| [item] | [reason] | [path] | [risk] | [fix] |
+## Security Considerations
 
-### 3) Security Concerns
+**[Area]:**
+- Risk: [What could go wrong]
+- Files: `[file paths]`
+- Current mitigation: [What's in place]
+- Recommendations: [What should be added]
 
-| Risk | OWASP category (if applicable) | Evidence | Current mitigation | Gap |
-|------|--------------------------------|----------|--------------------|-----|
-| [risk] | [A01/A03/etc or N/A] | [path] | [what exists] | [what is missing] |
+## Performance Bottlenecks
 
-### 4) Performance and Scaling Concerns
+**[Slow operation]:**
+- Problem: [What's slow]
+- Files: `[file paths]`
+- Cause: [Why it's slow]
+- Improvement path: [How to speed up]
 
-| Concern | Evidence | Current symptom | Scaling risk | Suggested improvement |
-|---------|----------|-----------------|-------------|-----------------------|
-| [issue] | [path/metric] | [symptom] | [risk] | [action] |
+## Fragile Areas
 
-### 5) Fragile/High-Churn Areas
+**[Component/Module]:**
+- Files: `[file paths]`
+- Why fragile: [What makes it break easily]
+- Safe modification: [How to change safely]
+- Test coverage: [Gaps]
 
-| Area | Why fragile | Churn signal | Safe change strategy |
-|------|-------------|-------------|----------------------|
-| [path] | [reason] | [recent churn evidence] | [approach] |
+## Scaling Limits
 
-### 6) `[ASK USER]` Questions
+**[Resource/System]:**
+- Current capacity: [Numbers]
+- Limit: [Where it breaks]
+- Scaling path: [How to increase]
 
-Add unresolved intent-dependent questions as a numbered list.
+## Dependencies at Risk
 
-1. [ASK USER] [question]
+**[Package]:**
+- Risk: [What's wrong]
+- Impact: [What breaks]
+- Migration plan: [Alternative]
 
-### 7) Evidence
+## Missing Critical Features
 
-- [scan output section reference]
-- [path/to/code-file]
-- [path/to/config-or-history-evidence]
+**[Feature gap]:**
+- Problem: [What's missing]
+- Blocks: [What can't be done]
 
-## Extended Sections (Optional)
+## Test Coverage Gaps
 
-Add only when needed:
+**[Untested area]:**
+- What's not tested: [Specific functionality]
+- Files: `[file paths]`
+- Risk: [What could break unnoticed]
+- Priority: [High/Medium/Low]
 
-- Full bug inventory
-- Component-level remediation roadmap
-- Cost/effort estimates by concern
-- Dependency-risk and ownership mapping
+---
+
+*Concerns audit: [date]*

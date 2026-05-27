@@ -1,44 +1,62 @@
 # Codebase Structure
 
-## Core Sections (Required)
+**Analysis Date:** [YYYY-MM-DD]
 
-### 1) Top-Level Map
-
-List only meaningful top-level directories and files.
+## Directory Layout
 
 | Path | Purpose | Evidence |
 |------|---------|----------|
 | [path/] | [purpose] | [source] |
 
-### 2) Entry Points
 
-- Main runtime entry: [FILE]
-- Secondary entry points (worker/cli/jobs): [FILES or NONE]
-- How entry is selected (script/config): [NOTE]
+## Directory Purposes
 
-### 3) Module Boundaries
+**[Directory Name]:**
+- Purpose: [What lives here]
+- Contains: [Types of files]
+- Key files: `[important files]`
 
-| Boundary | What belongs here | What must not be here |
-|----------|-------------------|------------------------|
-| [module/layer] | [responsibility] | [forbidden logic] |
+## Key File Locations
 
-### 4) Naming and Organization Rules
+**Entry Points:**
+- `[path]`: [Purpose]
 
-- File naming pattern: [kebab/camel/Pascal + examples]
-- Directory organization pattern: [feature/layer/domain]
-- Import aliasing or path conventions: [RULE]
+**Configuration:**
+- `[path]`: [Purpose]
 
-### 5) Evidence
+**Core Logic:**
+- `[path]`: [Purpose]
 
-- [path/to/root-tree-source]
-- [path/to/entry-config]
-- [path/to/key-module]
+**Testing:**
+- `[path]`: [Purpose]
 
-## Extended Sections (Optional)
+## Naming Conventions
 
-Add only when repository complexity requires it:
+**Files:**
+- [Pattern]: [Example]
 
-- Subdirectory deep maps by feature/layer
-- Middleware/boot order details
-- Generated-vs-source layout boundaries
-- Monorepo workspace-level structure maps
+**Directories:**
+- [Pattern]: [Example]
+
+## Where to Add New Code
+
+**New Feature:**
+- Primary code: `[path]`
+- Tests: `[path]`
+
+**New Component/Module:**
+- Implementation: `[path]`
+
+**Utilities:**
+- Shared helpers: `[path]`
+
+## Special Directories
+
+**[Directory]:**
+- Purpose: [What it contains]
+- Generated: [Yes/No]
+- Committed: [Yes/No]
+
+---
+
+*Structure analysis: [date]*

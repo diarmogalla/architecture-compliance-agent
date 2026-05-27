@@ -1,56 +1,60 @@
 # Technology Stack
 
-## Core Sections (Required)
+**Analysis Date:** [YYYY-MM-DD]
 
-### 1) Runtime Summary
+## Languages
 
-| Area | Value | Evidence |
-|------|-------|----------|
-| Primary language | [VALUE] | [FILE_PATH] |
-| Runtime + version | [VALUE] | [FILE_PATH] |
-| Package manager | [VALUE] | [FILE_PATH] |
-| Module/build system | [VALUE] | [FILE_PATH] |
+**Primary:**
+- [Language] [Version] - [Where used]
 
-### 2) Production Frameworks and Dependencies
+**Secondary:**
+- [Language] [Version] - [Where used]
 
-List only high-impact production dependencies (frameworks, data, transport, auth).
+## Runtime
 
-| Dependency | Version | Role in system | Evidence |
-|------------|---------|----------------|----------|
-| [NAME] | [VERSION] | [ROLE] | [FILE_PATH] |
+**Environment:**
+- [Runtime] [Version]
 
-### 3) Development Toolchain
+**Package Manager:**
+- [Manager] [Version]
+- Lockfile: [present/missing]
 
-| Tool | Purpose | Evidence |
-|------|---------|----------|
-| [TOOL] | [LINT/FORMAT/TEST/BUILD] | [FILE_PATH] |
+## Frameworks
 
-### 4) Key Commands
+**Core:**
+- [Framework] [Version] - [Purpose]
 
-```bash
-[install command]
-[build command]
-[test command]
-[lint command]
-```
+**Testing:**
+- [Framework] [Version] - [Purpose]
 
-### 5) Environment and Config
+**Build/Dev:**
+- [Tool] [Version] - [Purpose]
 
-- Config sources: [LIST FILES]
-- Required env vars: [VAR_1], [VAR_2], [TODO]
-- Deployment/runtime constraints: [SHORT NOTE]
+## Key Dependencies
 
-### 6) Evidence
+**Critical:**
+- [Package] [Version] - [Why it matters]
 
-- [path/to/manifest]
-- [path/to/runtime-config]
-- [path/to/build-or-ci-config]
+**Infrastructure:**
+- [Package] [Version] - [Purpose]
 
-## Extended Sections (Optional)
+## Configuration
 
-Add only when needed for complex repos:
+**Environment:**
+- [How configured]
+- [Key configs required]
 
-- Full dependency taxonomy by category
-- Detailed compiler/runtime flags
-- Environment matrix (dev/stage/prod)
-- Process manager and container runtime details
+**Build:**
+- [Build config files]
+
+## Platform Requirements
+
+**Development:**
+- [Requirements]
+
+**Production:**
+- [Deployment target]
+
+---
+
+*Stack analysis: [date]*

@@ -1,48 +1,65 @@
 # External Integrations
 
-## Core Sections (Required)
+**Analysis Date:** [YYYY-MM-DD]
 
-### 1) Integration Inventory
+## APIs & External Services
 
-| System | Type (API/DB/Queue/etc) | Purpose | Auth model | Criticality | Evidence |
-|--------|---------------------------|---------|------------|-------------|----------|
-| [name] | [type] | [purpose] | [auth] | [high/med/low] | [file] |
+**[Category]:**
+- [Service] - [What it's used for]
+  - SDK/Client: [package]
+  - Auth: [env var name]
 
-### 2) Data Stores
+## Data Storage
 
-| Store | Role | Access layer | Key risk | Evidence |
-|-------|------|--------------|----------|----------|
-| [db/cache/etc] | [role] | [module] | [risk] | [file] |
+**Databases:**
+- [Type/Provider]
+  - Connection: [env var]
+  - Client: [ORM/client]
 
-### 3) Secrets and Credentials Handling
+**File Storage:**
+- [Service or "Local filesystem only"]
 
-- Credential sources: [env/secrets manager/config]
-- Hardcoding checks: [result]
-- Rotation or lifecycle notes: [known/unknown]
+**Caching:**
+- [Service or "None"]
 
-### 4) Reliability and Failure Behavior
+## Authentication & Identity
 
-- Retry/backoff behavior: [implemented/none/partial]
-- Timeout policy: [where configured]
-- Circuit-breaker or fallback behavior: [if any]
+**Auth Provider:**
+- [Service or "Custom"]
+  - Implementation: [approach]
 
-### 5) Observability for Integrations
+## Monitoring & Observability
 
-- Logging around external calls: [yes/no + where]
-- Metrics/tracing coverage: [yes/no + where]
-- Missing visibility gaps: [list]
+**Error Tracking:**
+- [Service or "None"]
 
-### 6) Evidence
+**Logs:**
+- [Approach]
 
-- [path/to/integration-wrapper]
-- [path/to/config-or-env-template]
-- [path/to/monitoring-or-logging-config]
+## CI/CD & Deployment
 
-## Extended Sections (Optional)
+**Hosting:**
+- [Platform]
 
-Add only when needed:
+**CI Pipeline:**
+- [Service or "None"]
 
-- Endpoint-by-endpoint catalog
-- Auth flow sequence diagrams
-- SLA/SLO per integration
-- Region/failover topology notes
+## Environment Configuration
+
+**Required env vars:**
+- [List critical vars]
+
+**Secrets location:**
+- [Where secrets are stored]
+
+## Webhooks & Callbacks
+
+**Incoming:**
+- [Endpoints or "None"]
+
+**Outgoing:**
+- [Endpoints or "None"]
+
+---
+
+*Integration audit: [date]*

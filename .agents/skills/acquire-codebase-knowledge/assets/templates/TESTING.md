@@ -1,57 +1,105 @@
 # Testing Patterns
 
-## Core Sections (Required)
+**Analysis Date:** [YYYY-MM-DD]
 
-### 1) Test Stack and Commands
+## Test Framework
 
-- Primary test framework: [NAME + VERSION]
-- Assertion/mocking tools: [TOOLS]
-- Commands:
+**Runner:**
+- [Framework] [Version]
+- Config: `[config file]`
 
+**Assertion Library:**
+- [Library]
+
+**Run Commands:**
 ```bash
-[run all tests]
-[run unit tests]
-[run integration/e2e tests]
-[run coverage]
+[command]              # Run all tests
+[command]              # Watch mode
+[command]              # Coverage
 ```
 
-### 2) Test Layout
+## Test File Organization
 
-- Test file placement pattern: [co-located/tests folder/etc]
-- Naming convention: [pattern]
-- Setup files and where they run: [paths]
+**Location:**
+- [Pattern: co-located or separate]
 
-### 3) Test Scope Matrix
+**Naming:**
+- [Pattern]
 
-| Scope | Covered? | Typical target | Notes |
-|-------|----------|----------------|-------|
-| Unit | [yes/no] | [modules/services] | [notes] |
-| Integration | [yes/no] | [API/data boundaries] | [notes] |
-| E2E | [yes/no] | [user flows] | [notes] |
+**Structure:**
+```
+[Directory pattern]
+```
 
-### 4) Mocking and Isolation Strategy
+## Test Structure
 
-- Main mocking approach: [module/class/network]
-- Isolation guarantees: [what is reset and when]
-- Common failure mode in tests: [short note]
+**Suite Organization:**
+```typescript
+[Show actual pattern from codebase]
+```
 
-### 5) Coverage and Quality Signals
+**Patterns:**
+- [Setup pattern]
+- [Teardown pattern]
+- [Assertion pattern]
 
-- Coverage tool + threshold: [value or TODO]
-- Current reported coverage: [value or TODO]
-- Known gaps/flaky areas: [list]
+## Mocking
 
-### 6) Evidence
+**Framework:** [Tool]
 
-- [path/to/test-config]
-- [path/to/representative-test-file]
-- [path/to/ci-or-coverage-config]
+**Patterns:**
+```typescript
+[Show actual mocking pattern from codebase]
+```
 
-## Extended Sections (Optional)
+**What to Mock:**
+- [Guidelines]
 
-Add only when needed:
+**What NOT to Mock:**
+- [Guidelines]
 
-- Framework-specific suite patterns
-- Detailed mock recipes per dependency type
-- Historical flaky test catalog
-- Test performance bottlenecks and optimization ideas
+## Fixtures and Factories
+
+**Test Data:**
+```typescript
+[Show pattern from codebase]
+```
+
+**Location:**
+- [Where fixtures live]
+
+## Coverage
+
+**Requirements:** [Target or "None enforced"]
+
+**View Coverage:**
+```bash
+[command]
+```
+
+## Test Types
+
+**Unit Tests:**
+- [Scope and approach]
+
+**Integration Tests:**
+- [Scope and approach]
+
+**E2E Tests:**
+- [Framework or "Not used"]
+
+## Common Patterns
+
+**Async Testing:**
+```typescript
+[Pattern]
+```
+
+**Error Testing:**
+```typescript
+[Pattern]
+```
+
+---
+
+*Testing analysis: [date]*

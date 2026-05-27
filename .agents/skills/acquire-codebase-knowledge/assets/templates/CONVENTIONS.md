@@ -1,52 +1,75 @@
 # Coding Conventions
 
-## Core Sections (Required)
+**Analysis Date:** [YYYY-MM-DD]
 
-### 1) Naming Rules
+## Naming Patterns
 
-| Item | Rule | Example | Evidence |
-|------|------|---------|----------|
-| Files | [RULE] | [EXAMPLE] | [FILE] |
-| Functions/methods | [RULE] | [EXAMPLE] | [FILE] |
-| Types/interfaces | [RULE] | [EXAMPLE] | [FILE] |
-| Constants/env vars | [RULE] | [EXAMPLE] | [FILE] |
+**Files:**
+- [Pattern observed]
 
-### 2) Formatting and Linting
+**Functions:**
+- [Pattern observed]
 
-- Formatter: [TOOL + CONFIG FILE]
-- Linter: [TOOL + CONFIG FILE]
-- Most relevant enforced rules: [RULE_1], [RULE_2], [RULE_3]
-- Run commands: [COMMANDS]
+**Variables:**
+- [Pattern observed]
 
-### 3) Import and Module Conventions
+**Types:**
+- [Pattern observed]
 
-- Import grouping/order: [RULE]
-- Alias vs relative import policy: [RULE]
-- Public exports/barrel policy: [RULE]
+## Code Style
 
-### 4) Error and Logging Conventions
+**Formatting:**
+- [Tool used]
+- [Key settings]
 
-- Error strategy by layer: [SHORT SUMMARY]
-- Logging style and required context fields: [SUMMARY]
-- Sensitive-data redaction rules: [SUMMARY]
+**Linting:**
+- [Tool used]
+- [Key rules]
 
-### 5) Testing Conventions
+## Import Organization
 
-- Test file naming/location rule: [RULE]
-- Mocking strategy norm: [RULE]
-- Coverage expectation: [RULE or TODO]
+**Order:**
+1. [First group]
+2. [Second group]
+3. [Third group]
 
-### 6) Evidence
+**Path Aliases:**
+- [Aliases used]
 
-- [path/to/lint-config]
-- [path/to/format-config]
-- [path/to/representative-source-file]
+## Error Handling
 
-## Extended Sections (Optional)
+**Patterns:**
+- [How errors are handled]
 
-Add only for large or inconsistent codebases:
+## Logging
 
-- Layer-specific error handling matrix
-- Language-specific strictness options
-- Repo-specific commit/branching conventions
-- Known convention violations to clean up
+**Framework:** [Tool or "console"]
+
+**Patterns:**
+- [When/how to log]
+
+## Comments
+
+**When to Comment:**
+- [Guidelines observed]
+
+**JSDoc/TSDoc:**
+- [Usage pattern]
+
+## Function Design
+
+**Size:** [Guidelines]
+
+**Parameters:** [Pattern]
+
+**Return Values:** [Pattern]
+
+## Module Design
+
+**Exports:** [Pattern]
+
+**Barrel Files:** [Usage]
+
+---
+
+*Convention analysis: [date]*
