@@ -51,7 +51,7 @@ ${INCLUDE_DIAGRAMS ? `Create a clear visual diagram (C4 Model or architecture di
 - Provide both a visual diagram and a textual description
 - Ensure the diagram reflects the actual implementation in the codebase` : ""}
 
-**If Not Found:**
+**Not Found:**
 ${REPORT_GAPS ? "If application architecture is not evident in the codebase (e.g., early-stage projects, template/example repositories), explicitly state: **'Not evident in the codebase: Application architecture diagram could not be determined from available code structure.'**" : ""}
 
 ### 2. Dataflows and Schema Diagrams
@@ -80,7 +80,7 @@ ${REPORT_GAPS ? "If application architecture is not evident in the codebase (e.g
 **References:**
 ${REFERENCE_CODEBASE_DOCS ? `Consult 'docs/codebase/ARCHITECTURE.md' (if available) for documented data architecture patterns.` : ""}
 
-**If Not Found:**
+**Not Found:**
 ${REPORT_GAPS ? "If dataflows and schemas are not evident, explicitly state: **'Not evident in the codebase: Data flows and schema information could not be determined.'**" : ""}
 
 ### 3. External Dependencies
@@ -113,7 +113,7 @@ ${REPORT_GAPS ? "If dataflows and schemas are not evident, explicitly state: **'
 **References:**
 ${REFERENCE_CODEBASE_DOCS ? `Consult 'docs/codebase/INTEGRATIONS.md' and 'docs/codebase/STACK.md' (if available) for comprehensive dependency lists.` : ""}
 
-**If Not Found:**
+**Not Found:**
 ${REPORT_GAPS ? "If external dependencies are not evident, explicitly state: **'Not evident in the codebase: External dependencies and integrations could not be identified.'**" : ""}
 
 ### 4. Technology Stack — Application and Engineering
@@ -145,7 +145,7 @@ ${REPORT_GAPS ? "If external dependencies are not evident, explicitly state: **'
 **References:**
 ${REFERENCE_CODEBASE_DOCS ? `Consult 'docs/codebase/STACK.md' (if available) for a comprehensive technology analysis.` : ""}
 
-**If Not Found:**
+**Not Found:**
 ${REPORT_GAPS ? "If technology stack is not evident, explicitly state: **'Not evident in the codebase: Complete technology stack information could not be determined.'**" : ""}
 
 ### 5. Platform/Deployment Diagram
@@ -187,7 +187,7 @@ ${REPORT_GAPS ? "If technology stack is not evident, explicitly state: **'Not ev
 **References:**
 ${REFERENCE_CODEBASE_DOCS ? `Consult 'docs/codebase/ARCHITECTURE.md' (if available) for deployment layer documentation.` : ""}
 
-**If Not Found:**
+**Not Found:**
 ${REPORT_GAPS ? "If platform/deployment architecture is not evident, explicitly state: **'Not evident in the codebase: Deployment topology and platform architecture could not be determined.'**" : ""}
 
 ### 6. Non-Functional Requirements (NFR)
@@ -246,7 +246,7 @@ ${REPORT_GAPS ? "If platform/deployment architecture is not evident, explicitly 
 **References:**
 ${REFERENCE_CODEBASE_DOCS ? `Review 'docs/codebase/ARCHITECTURE.md' for documented reliability and performance patterns.` : ""}
 
-**If Not Found:**
+**Not Found:**
 ${REPORT_GAPS ? "If non-functional requirements are not evident, explicitly state: **'Not evident in the codebase: Non-functional requirements documentation is not available in the current codebase.'**" : ""}
 
 ### 7. QA Test Types and Coverage
@@ -321,7 +321,7 @@ ${REPORT_GAPS ? "If non-functional requirements are not evident, explicitly stat
 **References:**
 ${REFERENCE_CODEBASE_DOCS ? `Consult 'docs/codebase/TESTING.md' (if available) for detailed testing patterns and validation infrastructure.` : ""}
 
-**If Not Found:**
+**Not Found:**
 ${REPORT_GAPS ? "If QA test types and coverage information is not evident, explicitly state: **'Not evident in the codebase: Test framework and coverage information could not be determined. This may indicate a documentation gap or early-stage project.'**" : ""}
 
 ---
