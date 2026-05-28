@@ -8,7 +8,7 @@ It coordinates three modified MIT-licensed open-source sub-skills:
 - architecture-blueprint-generator
 - likec4-dsl
 
-See `THIRD_PARTY_NOTICES.md` for attribution and licence details.
+See `THIRD_PARTY_NOTICES.md` and the `licenses/` directory for attribution and licence details.
 
 ## Installation
 

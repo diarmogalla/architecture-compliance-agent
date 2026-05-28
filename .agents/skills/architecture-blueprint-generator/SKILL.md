@@ -9,7 +9,7 @@ description: "Focused architecture blueprint generator that produces detailed do
 
 ${PROJECT_TYPE="Auto-detect"} <!-- Primary technology stack -->
 ${ANALYSIS_DEPTH="Comprehensive"} <!-- Analysis scope: Quick, Standard, Comprehensive -->
-${INCLUDE_DIAGRAMS=true} <!-- Generate visual diagrams -->
+${INCLUDE_DIAGRAMS=false} <!-- Generate visual diagrams -->
 ${REFERENCE_CODEBASE_DOCS=true} <!-- Reference docs/codebase/ documents if available -->
 ${REPORT_GAPS=true} <!-- Explicitly note items not evident in codebase -->
 ${GENERATION_TIMESTAMP="YYYY-MM-DD_HHMMSS"} <!-- Timestamp for filename audit trail -->
