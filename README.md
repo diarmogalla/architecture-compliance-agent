@@ -1,4 +1,4 @@
-# Architecture Compliance Agent Skill
+# Architecture Compliance Agent
 
 This repository contains an original orchestrator skill for analysing software repositories and generating architecture documentation.
 
