@@ -3,7 +3,7 @@ name: architecture-blueprint-generator
 description: "Focused architecture blueprint generator that produces detailed documentation across seven key dimensions: application architecture diagrams, dataflows and schemas, external dependencies, technology stack, platform/deployment architecture, non-functional requirements, and QA test coverage. Automatically detects and visualizes these dimensions while explicitly noting gaps."
 ---
 
-# Architecture Blueprint Generator — 7 Key Dimensions
+# Architecture Blueprint Generator — 8 Key Dimensions
 
 ## Configuration Variables
 
@@ -325,7 +325,7 @@ ${REFERENCE_CODEBASE_DOCS ? `Consult 'docs/codebase/TESTING.md' (if available) f
 **Not Found:**
 ${REPORT_GAPS ? "If QA test types and coverage information is not evident, explicitly state: **'Not evident in the codebase: Test framework and coverage information could not be determined. This may indicate a documentation gap or early-stage project.'**" : ""}
 
-### 8. Techical Debt/Compliance with NHSE Principles
+### 8. Technical Debt/Compliance with NHSE Principles
 
 **Technical Debt Overview:**
 
