@@ -27,7 +27,7 @@ ${GENERATION_TIMESTAMP="YYYY-MM-DD_HHMMSS"} <!-- Timestamp for filename audit tr
 
 ## Generated Prompt
 
-"Create a focused 'docs/Project*Architecture_Blueprint*${GENERATION_TIMESTAMP}.md' document that comprehensively documents the codebase architecture across seven key dimensions. For any dimension not evident in the codebase, explicitly state 'Not evident in the codebase' rather than leaving it blank. Reference `docs/codebase/` documents if available in the repository. Use the following approach:
+"Create a focused 'docs/Project*Architecture_Blueprint*${GENERATION_TIMESTAMP}.md' document that comprehensively documents the codebase architecture across seven key dimensions. For any dimension not evident in the codebase, explicitly state 'Not evident in the codebase' rather than leaving it blank. Reference `docs/codebase/` documents if available in the repository. Ensure the final markdown file has a table of contents to easiliy navigate the sections. Use the following approach:
 
 ### 1. Application Architecture Diagram
 
