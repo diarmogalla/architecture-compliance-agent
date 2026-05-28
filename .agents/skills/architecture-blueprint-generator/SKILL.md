@@ -23,6 +23,7 @@ ${GENERATION_TIMESTAMP="YYYY-MM-DD_HHMMSS"} <!-- Timestamp for filename audit tr
 5. [Platform/Deployment Diagram](#5-platformdeployment-diagram)
 6. [Non-Functional Requirements (NFR)](#6-non-functional-requirements-nfr)
 7. [QA Test Types and Coverage](#7-qa-test-types-and-coverage)
+8. [Techical Debt/Compliance with NHSE Principles](#8-technical-debtcompliance-with-nhse-principles)
 
 ## Generated Prompt
 
@@ -323,6 +324,104 @@ ${REFERENCE_CODEBASE_DOCS ? `Consult 'docs/codebase/TESTING.md' (if available) f
 
 **Not Found:**
 ${REPORT_GAPS ? "If QA test types and coverage information is not evident, explicitly state: **'Not evident in the codebase: Test framework and coverage information could not be determined. This may indicate a documentation gap or early-stage project.'**" : ""}
+
+### 8. Techical Debt/Compliance with NHSE Principles
+
+**Technical Debt Overview:**
+
+- Known technical debt areas and documented concerns
+- Legacy code, outdated patterns, or deprecated dependencies
+- Architectural compromises or temporary workarounds
+- Areas requiring refactoring or redesign
+- Impact of technical debt on maintainability, scalability, security, and delivery
+- Prioritisation approach for addressing technical debt
+
+**Approved Technologies and Standards:**
+
+- Use of approved programming languages, frameworks, libraries, and platforms
+- Alignment with organisational technology standards
+- Evidence of unsupported, deprecated, or non-standard technologies
+- Dependency management and version control approach
+- Cloud, hosting, and infrastructure technology compliance
+- Rationale for technology choices where non-standard tools are used
+
+**Ways of Working:**
+
+- Development workflow and branching strategy
+- Code review process and approval requirements
+- Definition of Done and quality gates
+- Coding standards, linting, formatting, and naming conventions
+- Documentation expectations for code, APIs, infrastructure, and decisions
+- Approach to onboarding, knowledge sharing, and reducing key-person dependency
+
+**Codebase Maintainability:**
+
+- Code structure, modularity, and separation of concerns
+- Readability and consistency of implementation patterns
+- Complexity hotspots and duplicated logic
+- Error handling, logging, and observability practices
+- Configuration management and environment-specific settings
+- Testability of the codebase and ease of change
+
+**Architecture and Design Concerns:**
+
+- Alignment with documented architecture or solution design
+- Use of architectural decision records or equivalent documentation
+- Known design trade-offs, constraints, or limitations
+- Coupling between components, services, or systems
+- Scalability and resilience considerations
+- Data flow, integration, and interface design concerns
+
+**NHS Principles and Compliance:**
+
+- Alignment with NHS service standards, clinical safety, and information governance expectations
+- Compliance with NHS Digital, NHS England, or local trust technology principles where applicable
+- Accessibility considerations, including WCAG alignment where user interfaces are present
+- Data protection, GDPR, and privacy-by-design considerations
+- Security-by-design practices and alignment with NHS cyber security expectations
+- Auditability, traceability, and accountability of system changes
+
+**Clinical Safety and Risk Management:**
+
+- Evidence of clinical safety assessment where applicable
+- Hazard logs, risk assessments, or safety case documentation
+- Clear ownership of clinical safety responsibilities
+- Impact of technical debt on clinical safety or operational risk
+- Escalation process for safety-related defects or risks
+- Validation approach for clinically significant workflows or data
+
+**Operational Readiness:**
+
+- Support model and operational ownership
+- Monitoring, alerting, and incident response arrangements
+- Backup, restore, and disaster recovery considerations
+- Deployment and rollback procedures
+- Runbooks or operational documentation
+- Known operational risks caused by technical debt
+
+**Security, Governance, and Assurance:**
+
+- Evidence of secure development lifecycle practices
+- Secrets management and secure configuration handling
+- Access control and least-privilege principles
+- Audit logging and traceability of user/system actions
+- Dependency and vulnerability management
+- Assurance activities, approvals, or governance checkpoints
+
+**Remediation and Improvement Plan:**
+
+- Prioritised list of technical debt items
+- Severity, impact, and risk rating for each concern
+- Short-term mitigations versus long-term fixes
+- Ownership and target resolution dates
+- Dependencies or blockers to remediation
+- Process for tracking and reviewing technical debt over time
+
+**References:**
+${REFERENCE_CODEBASE_DOCS ? `Consult 'docs/codebase/CONCERNS.md' (if available) for documented technical debt, architectural concerns, compliance risks, and known deviations from approved standards. Use CONCERNS.md as much as possible.` : ""}
+
+**Not Found:**
+${REPORT_GAPS ? "If technical debt, compliance, or NHS principles information is not evident, explicitly state: **'Not evident in the codebase: Technical debt and NHS compliance information could not be determined. This may indicate a documentation gap, missing concerns register, or early-stage project.'**" : ""}
 
 ---
 

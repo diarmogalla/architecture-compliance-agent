@@ -5,75 +5,98 @@
 # Codebase Concerns
 
 **Analysis Date:** [YYYY-MM-DD]
+## Tech Debt & Technical Burden
 
-## Tech Debt
+This section assesses technical burden against the **NHSE Tech Guidelines** core principles and identifies areas requiring remediation. Reference: `docs/codebase/CONCERNS.md`
 
-**[Area/Component]:**
-- Issue: [What's the shortcut/workaround]
-- Files: `[file paths]`
-- Impact: [What breaks or degrades]
-- Fix approach: [How to address it]
+### Principle Alignment Assessment
 
-## Known Bugs
+#### I. Mainstream, Governed Platform Adoption
 
-**[Bug description]:**
-- Symptoms: [What happens]
-- Files: `[file paths]`
-- Trigger: [How to reproduce]
-- Workaround: [If any]
+**Compliance Status:** [✓ Aligned / ⚠ Partial / ✗ Misaligned]
 
-## Security Considerations
+**Non-mainstream Technologies:**
+- [Technology/Tool]: `[file paths]` — [Justification/ADR reference or remediation plan]
+- [Technology/Tool]: `[file paths]` — [Justification/ADR reference or remediation plan]
 
-**[Area]:**
-- Risk: [What could go wrong]
-- Files: `[file paths]`
-- Current mitigation: [What's in place]
-- Recommendations: [What should be added]
+**Legacy or Unsupported Tools:**
+- [Tool]: `[file paths]` — Impact: [What degrades] — Migration path: [Target mainstream alternative]
 
-## Performance Bottlenecks
+---
 
-**[Slow operation]:**
-- Problem: [What's slow]
-- Files: `[file paths]`
-- Cause: [Why it's slow]
-- Improvement path: [How to speed up]
+#### II. Security, Compliance, and Dependency Hygiene by Default
 
-## Fragile Areas
+**Compliance Status:** [✓ Aligned / ⚠ Partial / ✗ Misaligned]
 
-**[Component/Module]:**
-- Files: `[file paths]`
-- Why fragile: [What makes it break easily]
-- Safe modification: [How to change safely]
-- Test coverage: [Gaps]
+**Security Scanning Gaps:**
+- [Component/Module]: `[file paths]` — Gap: [What's not scanned] — Fix: [How to enable]
 
-## Scaling Limits
+**Dependency Management Issues:**
+- [Package]: `[file]` — Risk: [Why at risk] — Action: [Update/Replace/Audit]
 
-**[Resource/System]:**
-- Current capacity: [Numbers]
-- Limit: [Where it breaks]
-- Scaling path: [How to increase]
+**Secret/Credential Leaks:**
+- [Incident]: Location: `[file paths]` — Status: [Remediated/Pending] — Mitigation: [Current controls]
 
-## Dependencies at Risk
+---
 
-**[Package]:**
-- Risk: [What's wrong]
-- Impact: [What breaks]
-- Migration plan: [Alternative]
+#### III. Independent, Incremental Delivery
 
-## Missing Critical Features
+**Compliance Status:** [✓ Aligned / ⚠ Partial / ✗ Misaligned]
 
-**[Feature gap]:**
-- Problem: [What's missing]
-- Blocks: [What can't be done]
+**Monolithic/Coupled Areas:**
+- [Component/Module]: `[file paths]` — Problem: [Why tightly coupled] — Refactor plan: [How to decompose]
+- [Component/Module]: `[file paths]` — Problem: [Why tightly coupled] — Refactor plan: [How to decompose]
 
-## Test Coverage Gaps
+**Untestable or Hard-to-Isolate Code:**
+- [Functionality]: `[file paths]` — Barrier: [What prevents independent testing] — Solution: [Dependency injection / mock strategy / extraction]
 
-**[Untested area]:**
-- What's not tested: [Specific functionality]
-- Files: `[file paths]`
-- Risk: [What could break unnoticed]
-- Priority: [High/Medium/Low]
+---
 
+#### IV. Automated Quality, Observability, and Governance
+
+**Compliance Status:** [✓ Aligned / ⚠ Partial / ✗ Misaligned]
+
+**Testing Gaps:**
+- [Untested area]: `[file paths]` — Risk: High/Medium/Low — Coverage plan: [Unit/Integration/E2E needed]
+
+**Observability Blind Spots:**
+- [Component/Function]: `[file paths]` — Missing: [Logs/Metrics/Traces] — Instrumentation plan: [What to add]
+
+**CI/CD Gate Weaknesses:**
+- [Pipeline stage]: Issue: [What's not gated] — Remediation: [Add scan/test/validation]
+
+---
+
+#### V. Simplicity, Explicit Architecture, and Maintainability
+
+**Compliance Status:** [✓ Aligned / ⚠ Partial / ✗ Misaligned]
+
+**Over-Complex Patterns:**
+- [Pattern/Abstraction]: `[file paths]` — Complexity: [Why hard to maintain] — Simplification: [Alternative approach]
+
+**Undocumented Design Decisions:**
+- [Decision/Trade-off]: `[file paths]` — Gap: [What's not explained] — ADR needed: [Link or create]
+
+**Performance or Scalability Concerns:**
+- [Operation/Component]: `[file paths]` — Issue: [What degrades] — Improvement: [Optimization or refactor]
+
+### Summary & Remediation Roadmap
+
+| Principle | Status | Critical Issues | Timeline |
+|-----------|--------|-----------------|----------|
+| Mainstream Adoption | [✓/⚠/✗] | [Count] | [Q#/Sprint] |
+| Security & Hygiene | [✓/⚠/✗] | [Count] | [Q#/Sprint] |
+| Independent Delivery | [✓/⚠/✗] | [Count] | [Q#/Sprint] |
+| Quality & Observability | [✓/⚠/✗] | [Count] | [Q#/Sprint] |
+| Simplicity & Maintainability | [✓/⚠/✗] | [Count] | [Q#/Sprint] |
+
+**High-Priority Remediations:**
+1. [Issue]: Blocks [What] — Target: [Date] — Owner: [Role]
+2. [Issue]: Blocks [What] — Target: [Date] — Owner: [Role]
+
+**Deferred or Accepted Technical Debt:**
+- [Issue]: Reason: [Why accepted] — Review date: [When to revisit] — ADR: [Link]
+- [Issue]: Reason: [Why accepted] — Review date: [When to revisit] — ADR: [Link]
 ---
 
 *Concerns audit: [date]*
