@@ -16,7 +16,7 @@ ${GENERATION_TIMESTAMP="YYYY-MM-DD_HHMMSS"} <!-- Timestamp for filename audit tr
 
 ## Table of Contents
 
-1. [Application Architecture Diagram](#1-application-architecture-diagram)
+1. [Application Architecture Overview](#1-application-architecture-overview)
 2. [Dataflows and Schema Diagrams](#2-dataflows-and-schema-diagrams)
 3. [External Dependencies](#3-external-dependencies)
 4. [Technology Stack](#4-technology-stack---application-and-engineering)
@@ -29,31 +29,49 @@ ${GENERATION_TIMESTAMP="YYYY-MM-DD_HHMMSS"} <!-- Timestamp for filename audit tr
 
 "Create a focused 'docs/Project*Architecture_Blueprint*${GENERATION_TIMESTAMP}.md' document that comprehensively documents the codebase architecture across seven key dimensions. For any dimension not evident in the codebase, explicitly state 'Not evident in the codebase' rather than leaving it blank. Reference `docs/codebase/` documents if available in the repository. Ensure the final markdown file has a table of contents to easiliy navigate the sections. Use the following approach:
 
-### 1. Application Architecture Diagram
+### 1. Application Architecture Overview
 
-${INCLUDE_DIAGRAMS ? `Create a clear visual diagram (C4 Model or architecture diagram) showing:
+Provide a structured, textual description of the application's architecture, focusing on the key features and characteristics of the codebase rather than visual diagrams.
 
-**High-level Components:**
+**Architectural Style:**
 
-- Major system components and subsystems
-- Component responsibilities and boundaries
-- Primary communication paths between components
-- Organizational patterns (layered, microservices, monolithic, etc.)
+- Overall organizational pattern (e.g., layered, microservices, monolithic, modular monolith, event-driven, serverless, hexagonal/ports-and-adapters)
+- Rationale for the chosen pattern, where evident
+- Key architectural principles or constraints observed in the codebase
 
-**Interactions:**
+**High-level Components and Responsibilities:**
 
-- Synchronous vs. asynchronous communication patterns
-- External system integrations (if any)
-- Data flow between components
-- API/service boundaries
+- Major system components, subsystems, modules, or services
+- Responsibility and purpose of each component
+- Component boundaries and ownership
+- Entry points (e.g., APIs, CLIs, UIs, scheduled jobs, event handlers)
 
-**Output:**
+**Component Interactions:**
 
-- Provide both a visual diagram and a textual description
-- Ensure the diagram reflects the actual implementation in the codebase` : ""}
+- How components communicate (in-process calls, HTTP/REST, gRPC, messaging, events, shared storage)
+- Synchronous versus asynchronous communication patterns
+- API or service boundaries and contracts
+- Coupling and cohesion between components
+
+**Cross-cutting Concerns:**
+
+- Authentication, authorization, and security boundaries
+- Logging, monitoring, and observability hooks
+- Configuration, feature flags, and environment handling
+- Error handling and resilience patterns
+
+**Key Architectural Features:**
+
+- Notable design patterns in use (e.g., repository, CQRS, mediator, pipeline, plugin)
+- Extensibility and customization points
+- State management approach (stateless vs. stateful components)
+- Concurrency, parallelism, or background processing models
+
+**References:**
+${REFERENCE_CODEBASE_DOCS ? `Consult 'docs/codebase/ARCHITECTURE.md' (if available) as the primary source for documented architectural decisions, component breakdown, and system design. Cross-reference and reconcile the description here with that document, calling out any discrepancies between documentation and the actual code structure.` : ""}
 
 **Not Found:**
-${REPORT_GAPS ? "If application architecture is not evident in the codebase (e.g., early-stage projects, template/example repositories), explicitly state: **'Not evident in the codebase: Application architecture diagram could not be determined from available code structure.'**" : ""}
+${REPORT_GAPS ? "If application architecture is not evident in the codebase (e.g., early-stage projects, template/example repositories), explicitly state: **'Not evident in the codebase: Application architecture could not be determined from available code structure.'**" : ""}
 
 ### 2. Dataflows and Schema Diagrams
 

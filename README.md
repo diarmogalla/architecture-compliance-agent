@@ -10,6 +10,44 @@ It coordinates three modified MIT-licensed open-source sub-skills:
 
 See `THIRD_PARTY_NOTICES.md` and the `licenses/` directory for attribution and licence details.
 
+## Prerequisites
+
+The sub-skills depend on a few external tools. Install these before using the skill.
+
+### Git
+
+Used by `acquire-codebase-knowledge` to inspect repository history. Verify with:
+
+```bash
+git --version
+```
+
+### Python 3
+
+The `acquire-codebase-knowledge` sub-skill runs a discovery script (`scripts/scan.py`) using Python 3 (standard library only — no extra packages required). Verify with:
+
+```bash
+python3 --version
+```
+
+### Node.js and the LikeC4 CLI
+
+The `likec4-dsl` sub-skill depends on the LikeC4 CLI to validate and export diagrams.
+
+Install [Node.js](https://nodejs.org/) (which includes `npm` and `npx`), then install the LikeC4 CLI globally:
+
+```bash
+npm install -g likec4
+```
+
+Verify the installation:
+
+```bash
+likec4 --version
+```
+
+A minimum version of `1.53.0` is required. Alternatively, you can run the CLI on demand without a global install using `npx likec4 <command>`, `bunx likec4 <command>`, or `pnpm dlx likec4 <command>`.
+
 ## Installation
 
 This skill can be installed at user level so that it can be used against any repository on your machine.
