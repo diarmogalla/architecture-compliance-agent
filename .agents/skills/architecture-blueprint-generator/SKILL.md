@@ -27,7 +27,27 @@ ${GENERATION_TIMESTAMP="YYYY-MM-DD_HHMMSS"} <!-- Timestamp for filename audit tr
 
 ## Generated Prompt
 
-"Create a focused 'docs/Project*Architecture_Blueprint*${GENERATION_TIMESTAMP}.md' document that comprehensively documents the codebase architecture across seven key dimensions. For any dimension not evident in the codebase, explicitly state 'Not evident in the codebase' rather than leaving it blank. Reference `docs/codebase/` documents if available in the repository. Ensure the final markdown file has a table of contents to easiliy navigate the sections. Use the following approach:
+"Create a focused 'docs/Project*Architecture_Blueprint*${GENERATION_TIMESTAMP}.md' document that comprehensively documents the codebase architecture across seven key dimensions. For any dimension not evident in the codebase, explicitly state 'Not evident in the codebase' rather than leaving it blank. Reference `docs/codebase/` documents if available in the repository.
+
+**MANDATORY — Table of Contents:** The generated markdown file MUST begin (after the title block / metadata) with a `## Table of Contents` section that lists every top-level section in the document as a numbered markdown link to its anchor. The TOC is required and non-optional; do not emit the file without it. Use exactly this structure, adjusting only if a section is genuinely omitted:
+
+```markdown
+## Table of Contents
+
+1. [Application Architecture Overview](#1-application-architecture-overview)
+2. [Dataflows and Schema Diagrams](#2-dataflows-and-schema-diagrams)
+3. [External Dependencies](#3-external-dependencies)
+4. [Technology Stack — Application and Engineering](#4-technology-stack--application-and-engineering)
+5. [Platform/Deployment Diagram](#5-platformdeployment-diagram)
+6. [Non-Functional Requirements (NFR)](#6-non-functional-requirements-nfr)
+7. [QA Test Types and Coverage](#7-qa-test-types-and-coverage)
+8. [Technical Debt/Compliance with NHSE Principles](#8-technical-debtcompliance-with-nhse-principles)
+9. [Summary & Context Reference](#summary--context-reference)
+```
+
+Anchor slugs must follow GitHub-flavoured Markdown rules (lowercase; spaces → `-`; punctuation other than `-` stripped; em-dash `—` becomes `--`). Before finishing, verify every TOC link targets a heading that exists in the document.
+
+Use the following approach:
 
 ### 1. Application Architecture Overview
 
