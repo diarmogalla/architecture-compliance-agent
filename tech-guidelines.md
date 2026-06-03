@@ -1,5 +1,5 @@
 
-# NHSE Tech Guidelines
+# NHS England Tech Guidelines
 
 ## Core Principles
 
@@ -55,4 +55,4 @@ This constitution is authoritative for tool selection, delivery practices, quali
 - Complexity must be justified, with simpler alternatives considered and rejected in writing.
 - Use the constitution as the baseline for planning, review, and handover; do not rely on undocumented tribal knowledge.
 
-**Version**: 1.0.0 | **Ratified**: 2026-05-21 | **Last Amended**: 2026-05-21
+**Version**: 1.0.1 | **Ratified**: 2026-05-21 | **Last Amended**: 2026-05-21

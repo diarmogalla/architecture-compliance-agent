@@ -27,7 +27,7 @@ ${GENERATION_TIMESTAMP="YYYY-MM-DD_HHMMSS"} <!-- Timestamp for filename audit tr
 
 ## Generated Prompt
 
-"Create a focused 'docs/Project*Architecture_Blueprint*${GENERATION_TIMESTAMP}.md' document that comprehensively documents the codebase architecture across seven key dimensions. For any dimension not evident in the codebase, explicitly state 'Not evident in the codebase' rather than leaving it blank. Reference `docs/codebase/` documents if available in the repository.
+"Create a focused 'docs/*Architecture_Blueprint*${GENERATION_TIMESTAMP}.md' document that comprehensively documents the codebase architecture across seven key dimensions. For any dimension not evident in the codebase, explicitly state 'Not evident in the codebase' rather than leaving it blank. Reference `docs/codebase/` documents if available in the repository.
 
 **MANDATORY — Table of Contents:** The generated markdown file MUST begin (after the title block / metadata) with a `## Table of Contents` section that lists every top-level section in the document as a numbered markdown link to its anchor. The TOC is required and non-optional; do not emit the file without it. Use exactly this structure, adjusting only if a section is genuinely omitted:
 
@@ -467,7 +467,7 @@ ${REPORT_GAPS ? "If technical debt, compliance, or NHS principles information is
 
 **Generated Date & Filename:** [Auto-filled with generation timestamp in format YYYY-MM-DD_HHMMSS]
 
-- Output filename: `docs/Project_Architecture_Blueprint_YYYY-MM-DD_HHMMSS.md`
+- Output filename: `docs/Architecture-Blueprint-YYYY-MM-DD_HHMM.md`
 - This timestamp provides an audit trail of when the blueprint was generated
 
 **Codebase Context:**
