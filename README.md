@@ -48,6 +48,23 @@ likec4 --version
 
 A minimum version of `1.53.0` is required. Alternatively, you can run the CLI on demand without a global install using `npx likec4 <command>`, `bunx likec4 <command>`, or `pnpm dlx likec4 <command>`.
 
+### markdownlint-cli2
+
+The `architecture-orchestrator` skill lints all generated markdown files with [`markdownlint-cli2`](https://github.com/DavidAnson/markdownlint-cli2) using the config at `scripts/config/markdownlint.yaml`.
+
+It can be run on demand via `npx` (recommended, no install required):
+
+```bash
+npx markdownlint-cli2 --version
+```
+
+Or installed globally:
+
+```bash
+npm install -g markdownlint-cli2
+markdownlint-cli2 --version
+```
+
 ## Installation
 
 This skill can be installed at user level so that it can be used against any repository on your machine.
